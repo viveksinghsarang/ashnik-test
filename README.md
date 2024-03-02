@@ -6,5 +6,10 @@ Inside that directory, I have created an inventory file as ip and given permissi
 Then I created another server B where I wanted to install Grafana and Prometheus.
 So for connecting the two servers I have used ssh-keygen on server A and copied id_rsa.pub in server B .ssh/authrized_keys
 Now we have the connectivity from server A to B.
-I have created the playbook and inserted all the required commands in the 
+I have created the playbook and inserted all the required commands in the deploy_Prom_and_Grafana.yml file.
+For the configurations of Grafana and Prometheus, we have to create two files that will be copied from server A to B.
+To run the playbook we will use the below cmd
+ansible-playbook -i ip deploy_Prom_and_Grafana.yml
+On the server A to send vm matric to Prometheus I have installed Node exporter.
+
 
