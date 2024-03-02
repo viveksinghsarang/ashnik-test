@@ -6,7 +6,7 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9100']
 
-  - job_name: 'your_application'
+  - job_name: 'blackbox_exporter'
     static_configs:
-      - targets: ['your_application_ip:your_application_port']
+    - targets: ['localhost:9115']
 
