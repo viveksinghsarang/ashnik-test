@@ -13,4 +13,5 @@ To run the playbook we will use the below cmd
 ansible-playbook -i ip deploy_Prom_and_Grafana.yml  
 On server B to send vm matric to Prometheus I have installed Node exporter and created a systemd file for it.  
 For creating the dashboard we can import pre-created dashboards from the grafana.com.  
+Either we can import dashboards as a JSON or we can provide a dashboard ID in the Grafana console.  
 
