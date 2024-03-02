@@ -11,6 +11,6 @@ For the configurations of Grafana and Prometheus, we have to create two files gr
 The playbook will also create a systemd file for Prometheus, so it will copy the file prometheus.service.j2.
 To run the playbook we will use the below cmd
 ansible-playbook -i ip deploy_Prom_and_Grafana.yml
-On the server A to send vm matric to Prometheus I have installed Node exporter.
-
+On server B to send vm matric to Prometheus I have installed Node exporter and created a systemd file for it.
+For creating the dashboard we can import pre-created dashboards from the grafana.com.
 
